@@ -9,6 +9,12 @@ module.exports = {
         publicPath: "/dist/",
         filename: 'js/app.js'
     },
+    //处理路径(不需要.././等来寻找路径，直接跟文件名 page等)
+    // resolve: {
+    //     alias: {
+    //         page:path.resolve(__dirname, 'src/page')
+    //     }
+    // },
     module: {
         rules: [
             //react(jsx)语法的处理
