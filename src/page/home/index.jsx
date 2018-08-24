@@ -6,11 +6,13 @@
  */
 
 import React from 'react'
-
+import Sider from'../../components/SideNavBar/SideBar.jsx'
 class Home extends React.Component{
     render(){
         return(
-            <div>Home</div>
+            <div>
+                <Sider/>
+            </div>
         )
     }
 }
