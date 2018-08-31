@@ -8,7 +8,8 @@
 'use strict';
 import *as React from 'react';
 
-import { Layout, Menu, Breadcrumb, Icon } from 'antd';
+import 'font-awesome/css/font-awesome.min.css'
+import { Layout, Menu,Breadcrumb, Icon } from 'antd';
 import "./SideBar.scss";
 const { Header, Content, Footer, Sider } = Layout;
 const SubMenu = Menu.SubMenu;
@@ -68,7 +69,16 @@ class SiderLayout extends React.Component {
                     </Menu>
                 </Sider>
                 <Layout>
-                    <Header className='header'><span>电商后台管理系统</span></Header>
+                    <Header className='header'>
+                        <span>电商后台管理系统</span>
+                        <div className='user'>
+                            {/*<span>wuke<i className='fa fa-user'></i><i className='fa fa-gear'></i></span>*/}
+                                <span>wuke <Icon type="user" /><Icon type="setting" /></span>
+
+
+                        </div>
+
+                    </Header>
                     <Content style={{ margin: '10px' ,height:'80%'}}>
                         <Breadcrumb style={{ margin: '16px 0' }}>
                             <Breadcrumb.Item>wuke</Breadcrumb.Item>

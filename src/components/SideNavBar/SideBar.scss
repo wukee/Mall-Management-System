@@ -18,6 +18,15 @@
   padding: 0;
   background: #29345c;
   font-size: 1.7em;
-  text-align: center;
-  color: #f2fffc;
+  text-indent: 80px;  //文字首行空留距离
+  color: #dce9e6;
+  display: flex;
+  justify-content: space-between;
 }
+.header .user{
+  span{
+    padding-right: 25px;
+  }
+
+}
+
