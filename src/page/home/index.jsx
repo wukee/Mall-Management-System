@@ -7,11 +7,13 @@
 
 import React from 'react'
 import Sider from'../../components/SideNavBar/SideBar.jsx'
+import TodoList from '../../redux/todoList.jsx'
 class Home extends React.Component{
     render(){
         return(
             <div>
-                <Sider/>
+                {/*<Sider/>*/}
+                <TodoList></TodoList>
             </div>
         )
     }

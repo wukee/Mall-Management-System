@@ -40,32 +40,30 @@ class SiderLayout extends React.Component {
                     <div className="logo">{this.state.logo}</div>
                     <Menu theme="dark" defaultSelectedKeys={['1']} mode="inline">
                         <Menu.Item key="1">
-                            <Icon type="pie-chart" />
-                            <span>Option 1</span>
-                        </Menu.Item>
-                        <Menu.Item key="2">
-                            <Icon type="desktop" />
-                            <span>Option 2</span>
+                            {/*<Icon type="pie-chart" />*/}
+                            <Icon type="appstore" theme="outlined" />
+                            <span>首页</span>
                         </Menu.Item>
                         <SubMenu
                             key="sub1"
-                            title={<span><Icon type="user" /><span>User</span></span>}
+                            title={<span><Icon type="bars" theme="outlined" /><span>商品</span></span>}
                         >
-                            <Menu.Item key="3">Tom</Menu.Item>
-                            <Menu.Item key="4">Bill</Menu.Item>
-                            <Menu.Item key="5">Alex</Menu.Item>
+                            <Menu.Item key="3">商品管理</Menu.Item>
+                            <Menu.Item key="4">品类管理</Menu.Item>
                         </SubMenu>
                         <SubMenu
                             key="sub2"
-                            title={<span><Icon type="team" /><span>Team</span></span>}
+                            title={<span><Icon type="check-square" theme="outlined" /><span>订单</span></span>}
                         >
-                            <Menu.Item key="6">Team 1</Menu.Item>
-                            <Menu.Item key="8">Team 2</Menu.Item>
+                            <Menu.Item key="6">订单管理</Menu.Item>
                         </SubMenu>
-                        <Menu.Item key="9">
-                            <Icon type="file" />
-                            <span>File</span>
-                        </Menu.Item>
+                        <SubMenu
+                            key="sub3"
+                            title={<span><Icon type="user" /><span>用户</span></span>}
+                        >
+                            <Menu.Item key="3">用户管理</Menu.Item>
+                        </SubMenu>
+
                     </Menu>
                 </Sider>
                 <Layout>
